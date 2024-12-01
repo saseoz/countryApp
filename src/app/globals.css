@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 98%);
+  --secondrybg:  hsl(0, 0%, 100%);
+  --text: hsl(200, 15%, 8%);
+  --input: hsl(0, 0%, 100%);
+  --searchIcon: gray;
+}
+
+.dark {
+    --background: hsl(207, 26%, 17%);
+    --secondrybg: hsl(209, 23%, 22%);
+    --text: hsl(0, 0%, 100%);
+    --input: hsl(209, 23%, 22%);
+    --searchIcon: white;
+}
+
+body {
+  color: var(--text);
+  background: var(--background);
+  font-family: "Nunito Sans", serif;
+  transition: background .3s ease;
+}
